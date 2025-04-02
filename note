@@ -1,0 +1,27 @@
+from selenium_config.open_browser import initialize_browser, login
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.by import By
+from functions.atv_day import is_active
+from csv_config.csv_archive import read_csv
+import time
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+import pyperclip
+from wfm.contracts import enter_contract, contract_info
+
+
+        # Localiza o campo de pesquisa e insere o número do contrato
+        search_contract_input = WebDriverWait(browser, 10).until(
+            EC.visibility_of_element_located((By.XPATH, '//input[contains(@class, "global-search-bar-input-button")]'))
+        )
+
+
+try:
+    # Localiza o campo de pesquisa e insere o número do contrato
+    search_input = WebDriverWait(browser, 10).until(
+        EC.visibility_of_element_located((By.XPATH, '//input[@placeholder="Pesquisa em atividades"]'))
+    )
+except:
+    search_input = WebDriverWait(browser, 10).until(
+        EC.visibility_of_element_located((By.XPATH, '//input[@class="search-bar-input"]'))
+    )

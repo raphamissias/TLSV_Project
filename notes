@@ -1,0 +1,19 @@
+#     menu = """
+# Qual função deseja escolher? 
+# 1 - Ativo, período manhã
+# 2 - Ativo, período tarde
+# 3 - Antecipação
+# 4 - Sair
+# """
+
+#     which_function = input(menu)
+    
+#     if "1" in which_function:
+#         is_active() 
+
+# ---------------------------------------------------
+    # search_input = browser.find_element('xpath', '//*[@id="APjFqb"]')
+    # search_input.send_keys("Selenium")
+
+    # search_button = browser.find_element('xpath', '/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]')
+    # search_button.click()
