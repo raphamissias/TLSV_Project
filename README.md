@@ -1,31 +1,31 @@
 # TLSV_Project
-##### Apresentação
-Programa para automação de conferência de contratos no Workforce Management da Oracle.
-##### 👨‍💻 Tecnologias
+##### Presentation
+Program for automating contract review in Oracle Workforce Management.
+##### 👨‍💻 Technologies
 • Python • Selenium
-##### 🔧 Instalação
-1. Clone o repositório:
+##### 🔧 Instalation
+1. Clone the repository:
 
 `git clone https://github.com/raphamissias/TLSV_Project.git
 cd TLSV_Project`
 
 
-2. Instale as dependências:
+2. Install the dependencies:
 
 `python -m venv venv
 source venv/Scripts/activate
 pip install -r requirements.txt`
 
-##### 🚀 Executando o projeto
-1. O arquivo .csv que servirá de consulta para o programa deve ser baixado diretamente pelo WFM na sessão de atendimentos técnicos e colocado na pasta csv_file.
+##### 🚀 Running the project
+1. The .csv file that will be used by program review must be downloaded in the technical support section on Oracle WFM and pasted in “csv_file” directory.
 
-1. Para iniciar o programa:
+1. To run the program:
 
 `python main.py`
 
-##### 🎯 Fluxo Principal
-1. O programa primeiramente irá iniciar o navegador Chrome em modo debug e se necessário, fará login no WFM.
-2. Ele fará a leitura dos contratos do arquivo colocado na pasta “csv_file”.
-2. Para cada contrato, é feito a busca no site e retornado o status e informações relevantes do contrato referente.
-4. A nova planilha é atualizada com as informações a cada busca por contrato.
-5. A planilha final é salva e o programa e navergador são finalizados.
+##### 🎯 Main Flow
+1. The program firstly will run Chrome in debug mode and if necessary, will sing in on Oracle WFM.
+2. The file in “csv_file” will be read and the contracts extracted.
+2. For each contract, a search is performed and the status and relevant information about the current contract are returned.
+4. The new spreadsheet is updated for each contract searched.
+5. The final spreadsheet is saved, and the program and browser are closed.
